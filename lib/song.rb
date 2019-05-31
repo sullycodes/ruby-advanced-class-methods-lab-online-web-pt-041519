@@ -50,7 +50,7 @@ class Song
     artist_name = arr.first.strip
     song_name = arr.last.strip.chomp(".mp3")
     song = self.new_by_name(song_name)
-    # song.artist_name = artist_name
+    song.artist_name = artist_name
   end
 
   def self.destroy_all

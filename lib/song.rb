@@ -57,7 +57,7 @@ class Song
 #describe '.create_from_filename' do
     # it 'initializes and saves a song and artist_name based on the filename format' do
 
-  def create_from_filename(file_name)
+  def self.create_from_filename(file_name)
     song = self.new_from_filename(file_name)
     song.save
   end
